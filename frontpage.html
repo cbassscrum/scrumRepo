@@ -6,11 +6,13 @@
 		<script>
 			function startTime() {
 				var dt = new Date();
-				document.getElementById("timestamp").innerHTML = dt.toLocaleString();
+				var offset = new Date().getTimezoneOffset() * ;
+				document.getElementById("timestamp").innerHTML = dt.toLocaleString() + " GMT-0600 (Mountain Daylight Time)";
+				
 				var t = setTimeout(startTime, 500);
 			}
 		</script>
-		<i><span id="timestamp"></span></i>
+		<span id="timestamp"></span>
 		<a href="frontdescription.html">Description</a> 
 		<a href="gallery.html">Gallery</a>
 		<hr>
