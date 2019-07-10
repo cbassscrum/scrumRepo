@@ -10,11 +10,18 @@
 				var t = setTimeout(startTime, 500);
 			}
 		</script>
-		
 		<i><span id="timestamp"></span></i>
 		<a href="frontdescription.html">Description</a> 
 		<a href="gallery.html">Gallery</a>
 		<hr>
-		<img src="front.jpg" width=800></a>
+
+		<video id='vid' width="640" height="480" autoplay muted loop>
+		  <source src="movie.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+		</video>
+		<script>
+			document.getElementById('vid').play();
+		</script>
+		<!--img src="front.jpg" width=800-->
 	</body>
 </html>
