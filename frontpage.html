@@ -6,7 +6,7 @@
 		<script>
 			function startTime() {
 				var dt = new Date();
-				var offset = new Date().getTimezoneOffset() * ;
+				var offset = new Date().getTimezoneOffset();
 				document.getElementById("timestamp").innerHTML = dt.toLocaleString() + " GMT-0600 (Mountain Daylight Time)";
 				
 				var t = setTimeout(startTime, 500);
